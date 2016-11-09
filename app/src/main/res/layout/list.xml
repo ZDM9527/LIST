@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="60dp"
+        >
+
+        <com.example.lenovo.list.HandWrite
+            android:id="@+id/handWriting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:weightSum="6"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home"
+            android:onClick="onclick"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:id="@+id/home"
+            android:background="@color/colorwhite"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clear"
+            android:onClick="onclick"
+            android:id="@+id/clear"
+            android:background="@color/colorwhite"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/preservation"
+            android:onClick="onclick"
+            android:id="@+id/preservation"
+            android:background="@color/colorwhite"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:layout_weight="1" />
+
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:id="@+id/line"
+            android:scaleType="fitCenter"
+            android:background="@color/colorwhite"
+            android:cropToPadding="false"
+            android:onClick="onclick"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dot"
+            android:onClick="onclick"
+            android:background="@color/colorwhite"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:id="@+id/dot"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/eraser"
+            android:onClick="onclick"
+            android:id="@+id/eraser"
+            android:background="@color/colorwhite"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:layout_weight="0.81" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="550dp"
+        android:layout_height="80dp"
+        android:weightSum="10"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/linearLayout"
+        android:layout_toStartOf="@+id/linearLayout">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:src="@drawable/black"
+            android:id="@+id/black"
+            android:scaleType="fitCenter"
+            android:onClick="onclick"
+            android:layout_weight="1"
+            android:background="@color/colorwhite"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:src="@drawable/brown"
+            android:id="@+id/brown"
+            android:onClick="onclick"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:layout_weight="1"
+            android:background="@color/colorwhite"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:src="@drawable/blue"
+            android:onClick="onclick"
+            android:id="@+id/blue"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:layout_weight="1"
+            android:background="@color/colorwhite"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:src="@drawable/pink"
+            android:onClick="onclick"
+            android:id="@+id/pink"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:layout_weight="1"
+            android:background="@color/colorwhite"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:src="@drawable/red"
+            android:onClick="onclick"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:id="@+id/red"
+            android:layout_weight="1"
+            android:background="@color/colorwhite"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:src="@drawable/violet"
+            android:onClick="onclick"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:id="@+id/violet"
+            android:layout_weight="1"
+            android:background="@color/colorwhite"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:src="@drawable/gray"
+            android:onClick="onclick"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:id="@+id/gray"
+            android:layout_weight="1"
+            android:background="@color/colorwhite"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:src="@drawable/wathet"
+            android:onClick="onclick"
+            android:id="@+id/wathet"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:layout_weight="1"
+            android:background="@color/colorwhite"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:src="@drawable/yellow"
+            android:onClick="onclick"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:id="@+id/yellow"
+            android:layout_weight="1"
+            android:background="@color/colorwhite"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:src="@drawable/orange"
+            android:onClick="onclick"
+            android:scaleType="fitCenter"
+            android:cropToPadding="false"
+            android:id="@+id/orange"
+            android:layout_weight="1"
+            android:background="@color/colorwhite"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
